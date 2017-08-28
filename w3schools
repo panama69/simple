@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+table, td {
+    border: 1px solid black;
+}
+</style>
+</head>
+<body>
+
+<p>Click the button to add a new row at the first position of the table and then add cells and content.</p>
+
+
+<table id="myTable">
+  <tr>
+    <td>Row1 cell1</td>
+
+  </tr>
+  <tr>
+    <td>Row2 cell1</td>
+
+  </tr>
+  <tr>
+    <td>Row3 cell1</td>
+
+  </tr>
+</table>
+<br>
+
+<button onclick="myFunction()">Try it</button>
+
+<script>
+function myFunction() {
+    var table = document.getElementById("myTable");
+    var row = table.insertRow();
+    var cell1 = row.insertCell();
+
+    cell1.innerHTML = new Date();
+}
+</script>
+
+</body>
+</html>
